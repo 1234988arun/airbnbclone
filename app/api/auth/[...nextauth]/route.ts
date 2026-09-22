@@ -69,7 +69,7 @@ export const authOptions:NextAuthOptions ={
                   password: credentials?.password
                 }
                 try{
-                  const {data} = await axios.post(`${process.env.SERVER}/api/auth/login`, payload)
+                  const {data} = await axios.post('https://airbnbclone-l5zl.onrender.com/api/auth/login', payload)
                   // Backend login API ko email/password bhejkar user ko verify karwate hain
                 // Agar credentials correct hain to backend user ka data return karega
 
@@ -112,7 +112,7 @@ export const authOptions:NextAuthOptions ={
                 provider: account.provider,
                 }
                 try{
-                  const {data} = await axios.post(`${process.env.SERVER}/api/auth/login`, payload)
+                  const {data} = await axios.post('https://airbnbclone-l5zl.onrender.com/api/auth/login', payload)
                   user.id = data.id
                   user.email = data.email
                   user.name = data.name
