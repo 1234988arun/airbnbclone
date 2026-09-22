@@ -5,14 +5,19 @@ import { CheckOutlined, StarFilled, HomeOutlined } from "@ant-design/icons";
 import { Button, Card, message } from "antd";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Booked = () => {
   const router = useRouter();
-  const booking = JSON.parse(sessionStorage.getItem("booking") || "{}");
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
-  
+
+const [booking, setBooking] = useState(() => {
+  if (typeof window !== "undefined") {
+    return JSON.parse(sessionStorage.getItem("booking") || "{}");
+  }
+  return {};
+});
 
   const handleBooking = async (selectedRating: number) => {
       const slug = booking?.listing?.slug;
