@@ -154,7 +154,10 @@ const Nav = () => {
         <div className="shrink-0">
           <Image
             width={120}
-            height={40}
+            height={0}
+            loading="eager"
+            sizes="120px"
+            priority
             alt="logo-image"
             src="/Airbnb-Logo.png"
           />

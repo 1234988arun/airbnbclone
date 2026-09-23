@@ -71,11 +71,10 @@ interface LoginInterface {
                     <Image
                       src="/Airbnb-Logo.png"
                       alt="Airbnb"
-                      width={110}
-                      height={0}
-                      loading="eager"
-                      sizes="110px"
+                      width={120}
+                      height={40}
                       className="object-contain"
+                      priority
                     />
                   </div>
 
