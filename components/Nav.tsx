@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import {
   MenuOutlined,
@@ -149,20 +148,12 @@ const Nav = () => {
   return (
     <div>
       <div className="flex flex-col md:flex-row md:justify-between md:items-center px-2 pb-2 md:px-4 md:py-2 gap-2 md:gap-3 shadow-xs">
-
-        {/* Logo */}
-        <div className="shrink-0">
-          <Image
-            width={120}
-            height={0}
-            loading="eager"
-            sizes="120px"
-            priority
-            alt="logo-image"
-            // src="/Airbnb-Logo.png"
-            src="/Airbnb-Logo.png"
-          />
-        </div>
+         <h1 className="text-3xl font-extrabold tracking-[-1px] text-rose-500">
+  Airbnb
+</h1>
+        {/* <div className="">
+         <img src="/alogo.png" alt="logo" width={120} height={40} className="!w-[120] !h-[40] object-cover" />
+        </div> */}
 
         {/* Search */}
         <div className="block w-full md:w-[50%] relative">

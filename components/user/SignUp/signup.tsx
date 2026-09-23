@@ -1,7 +1,6 @@
   "use client";
 
   import { Button, Carousel, Form, Input, message } from "antd";
-  import { FcGoogle } from "react-icons/fc";
   import Image from 'next/image'
 import Link from "next/link";
 import axios from "axios";
@@ -47,14 +46,8 @@ interface SignUpValues {
             onFinish={handleSubmit}
           >
                 <div className="flex mb-4">
-                    <Image
-                      src="/Airbnb-Logo.png"
-                      alt="Airbnb"
-                      width={120}
-                      height={40}
-                      className="object-contain"
-                      priority
-                    />
+ 
+
                   </div>
 
             <h1 className="text-3xl font-bold mb-6">

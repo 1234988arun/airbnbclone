@@ -68,14 +68,7 @@ interface LoginInterface {
             onFinish={handleSubmit}
           >
                 <div className="flex mb-4">
-                    <Image
-                      src="/Airbnb-Logo.png"
-                      alt="Airbnb"
-                      width={120}
-                      height={40}
-                      className="object-contain"
-                      priority
-                    />
+
                   </div>
 
             <h1 className="text-3xl font-bold mb-6">
