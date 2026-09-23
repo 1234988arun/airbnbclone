@@ -159,6 +159,7 @@ const Nav = () => {
             sizes="120px"
             priority
             alt="logo-image"
+            // src="/Airbnb-Logo.png"
             src="/Airbnb-Logo.png"
           />
         </div>
