@@ -18,9 +18,9 @@ interface Listing {
   category?: string;
   city?: string;
   landMark?: string;
-  publicImage1?: string;
-  publicImage2?: string;
-  publicImage3?: string;
+  image1?: string;
+  image2?: string;
+  image3?: string;
   isBooked?:boolean;
   host?:string;
   bookingId?: string;
@@ -131,9 +131,9 @@ const ListingSlider = ({ title, listings, onCancelled }: ListingSliderProps) => 
                 ratings={listing.ratings}
                 slug={listing.slug}
                 rent={listing.rent}
-                image1={listing.publicImage1}
-                image2={listing.publicImage2}
-                image3={listing.publicImage3}
+                image1={listing.image1}
+                image2={listing.image2}
+                image3={listing.image3}
                 onCancelled={onCancelled}
               />
             </div>
@@ -192,8 +192,8 @@ const Homepage = () => {
             
             {
               data?.listing?.length? 
-                data?.listing?.map(({title,rent, landMark, slug , isBooked, host, category, ratings, publicImage1,publicImage2,publicImage3, bookingId},index)=>(
-                    <ListingCard key={index} bookingId={bookingId} landMark={landMark} isBooked={isBooked} host={host} category={category} title={title} ratings={ratings} slug={slug} rent={rent} image1={publicImage1} image2={publicImage2} image3={publicImage3}  onCancelled={() => mutate()}/>
+                data?.listing?.map(({title,rent, landMark, slug , isBooked, host, category, ratings, image1,image2,image3, bookingId},index)=>(
+                    <ListingCard key={index} bookingId={bookingId} landMark={landMark} isBooked={isBooked} host={host} category={category} title={title} ratings={ratings} slug={slug} rent={rent} image1={image1} image2={image2} image3={image3}  onCancelled={() => mutate()}/>
                 )):
                 <div className="col-span-full py-32 mx-auto w-full  flex items-center justify-center">
                   <Empty description="Sorry, no category available"/>
