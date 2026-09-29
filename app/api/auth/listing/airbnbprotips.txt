@@ -1,0 +1,65 @@
+airbnb project pro tips
+
+for optimizing the server for better result
+search/filter property use
+pagination use 
+image file validation on both frontend as well as backend
+compress image npm install browser-image-compression
+apply cache + rate limit (atlast)
+
+do check daily
+async,await , return, status error code proper for api optimization
+
+with this project
+
+ai sallry booster
+openai,	gemeini,cloud apis,
+prompt engineering,
+structured json output,
+Streaming responses
+function/tool calling
+Embeddings,
+Vector database
+RAG
+AI agents — basic level
+AI API security + rate limiting
+
+
+
+after this project 
+github,aws,ci/cd + shadcn/ui(later second project possobile)
+
+aws topics 
+EC2
+S3
+CloudFront
+RDS
+IAM
+
+agar insbe m upar time lgra to kuch avoid kr main target project finish krna hai sb ek project m ni lgana bc next project bhi bnana hai jis se new skills to ayngi revision bhi hoga
+
+
+most important base strong bhut strong bus woi main h 
+
+
+
+okaynext step 
+
+booking
+ratings type on viewcard later
+http://localhost:3000/mylisting protect url other also 
+
+
+
+
+pending
+first time page open nothing show then refresh the page then shows
+ wishlist what to do 
+filtering in this project
+
+
+
+check on login logout mylisting visible or not populate in login
+
+
+
