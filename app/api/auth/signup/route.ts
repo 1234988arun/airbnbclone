@@ -17,7 +17,11 @@ export const POST = async(req:NextRequest)=>{
        return res.json({message:'signup successfully'})
     }
 
-    catch(err){
-       return serverError(err)
-    }
+    catch (err: unknown) {
+  if (err instanceof Error) {
+    return res.json({ message: err.message }, { status: 400 });
+  }
+
+  return serverError(err);
+}
 }
